@@ -1,8 +1,9 @@
 from datetime import date
 from datetime import datetime
+from colorama import Fore,Back,Style
 
 def date_para_str(data: date) -> str:
-    return data.strftime('%d/%m/%Y')
+    return data.strftime(Back.BLUE + '%d/%m/%Y')
 
 def str_para_date(data: str) -> date:
     return datetime.strptime(data,'%d/%m/%Y')
